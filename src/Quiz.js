@@ -35,7 +35,8 @@ function Quiz() {
     <div className='quiz'>
       {showScore ? (
         <div className='score-section'>
-          You scored {score} out of {quizData.length}
+            {score > quizData.length * 0.8 ? 'You know Sharon': 'You Do not know Sharon'}
+            <br></br>You scored {score} out of {quizData.length}
         </div>
       ) : (
         <>
